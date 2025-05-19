@@ -17,24 +17,39 @@ Installation Instructions,
 
 This is a front-end only project. No installation is necessary:
 
-Clone this repo or download ZIP. Open index.html in a browser. All client-side with JavaScript and external APIs.
+1. Clone this repo or download ZIP.
+2. Open index.html in a browser.
+3. All client-side with JavaScript and external APIs.
 
-Deployment Instructions, 
+Deployment Instructions 
 
 To deploy this project:
-Use Vercel or GitHub Pages., No build step or server needed, it's a static HTML project. API Usage, Open-Meteo API is used to get the weather forecast by user geolocation. Supabase is used as a real-time backend for storing event data.
+- Use Vercel or GitHub Pages.
+- No build step or server needed, it's a static HTML project. 
 
-Developer Notes, 
+API Usage 
 
-Utilizes FullCalendar.js for dynamic calendar rendering. Utilizes Day.js for date/time manipulation. All APIs fetched through CDN. Events and weather are rendered together for a full UX.
+- **Open-Meteo** API is used to get the weather forecast by user geolocation.
+- **Supabase** is used as a real-time backend for storing event data.
 
-Known Bugs,
+Developer Notes
+
+- Utilizes FullCalendar.js for dynamic calendar rendering.
+- Utilizes Day.js for date/time manipulation.
+- All APIs fetched through CDN.
+- Events and weather are rendered together for a full UX.
+
+Known Bugs
 
 - Adding events to the calendar will convert the input time to UTC. This should be fixed by changing the default timezone for the Supabase database to your preferred time zone.
 - Adding a calendar event will add the event for all site visitors. Treat this like a public use calendar for now until this is resolved.
 
-✅ Extra Credit Features, 
-Custom CSS animations on buttons and transitions, Full calendar with weather icon overlays, Real-time API data shown to the user,
+✅ Extra Credit Features
 
-💻 Author, 
+- Custom CSS animations on buttons and transitions,
+- Full calendar with weather icon overlays,
+- Real-time API data shown to the user,
+
+💻 Author
+
 Built by Vincent Park and Ari Freireich as a part of INST377. Contact: [Vince373, Afreirei] 
