@@ -41,8 +41,9 @@ Developer Notes
 
 Known Bugs
 
-- Adding events to the calendar will convert the input time to UTC. This should be fixed by changing the default timezone for the Supabase database to your preferred time zone.
 - Adding a calendar event will add the event for all site visitors. Treat this like a public use calendar for now until this is resolved.
+- No way to remove calendar events at the moment.
+- Calendar events will only show the start time on the calendar. End time is recorded, but not shown.
 
 ✅ Extra Credit Features
 
