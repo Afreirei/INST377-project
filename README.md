@@ -40,9 +40,5 @@ Real-time API data shown to the user,
 ---
 
 💻 Author,
-Built by a student in INST377.
+Built by Vincent Park and Ari Freireich as a part of INST377.
 Contact: [Your GitHub Name or Email]
-
-u can follow this format for the readme and developer manual
-i acc gotta lock in now for my finals im sry but i dont think i can help now 😭
-got one at 9 am and then 2 pm im dead 💀
