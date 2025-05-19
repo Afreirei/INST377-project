@@ -35,6 +35,11 @@ Uses Day.js for date/time handling.,
 All APIs are loaded via CDN.,
 Events and weather are displayed together for full UX.,
 
+Known Bugs,
+- Adding events to the calendar will convert the input time to UTC. This should be fixed by changing the default timezone for the Supabase database to your preferred time zone. 
+- Adding a calendar event will add the event for all site visitors. Treat this like a public use calendar for now until this is resolved.
+- 
+
 ---
 
 ✅ Extra Credit Features,
