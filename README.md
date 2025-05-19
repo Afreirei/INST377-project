@@ -11,7 +11,7 @@ Target Browsers: This app targets web browsers like Chrome, Edge, Firefox, etc.
 
 
 
-📄 Developer Manual,
+#  📄 Developer Manual,
 
 Installation Instructions, 
 
