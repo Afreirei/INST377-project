@@ -1,0 +1,86 @@
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f2f7fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      padding: 1.2em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    header h1::before { content: '⛅'; font-size: 1.4em; }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover { color: #ffeb3b; }
+
+    main {
+      padding: 2em;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .page {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .page.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #1a1a1a;
+      font-size: 1.5rem;
+      margin-bottom: 1em;
+    }
+
+    form input, form button {
+      padding: 0.7em; margin-bottom: 1em; width: 100%;
+      border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;
+    }
+
+    form button {
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.1s;
+    }
+
+    form button:hover { background-color: #1976d2; }
+    form button:active {
+      transform: scale(0.97);
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+
+    #calendar { margin-top: 2em; }
+    #eventForecast { font-weight: 500; margin-top: 1em; }

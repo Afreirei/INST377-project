@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js" defer></script>
+
+  <title>Sunny Days</title>
+
+  <!-- Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.6/dist/umd/supabase.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Sunny Days</h1>
+    <nav>
+      <a href="#" onclick="event.preventDefault(); showPage('home')">Home</a>
+      <a href="#" onclick="event.preventDefault(); showPage('event')">New Event</a>
+      <a href="#" onclick="event.preventDefault(); showPage('about')">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <h2>Today's Weather Forecast</h2>
+      <p id="forecast"></p>
+      <p style="color: #555; font-size: 0.95rem; margin-top: -0.5em;">
+        ⓘ Weather icons only appear for the current and upcoming forecastable days (usually 6–10 days ahead).
+      </p>
+      <div id="calendar"></div>
+    </section>
+
+    <section id="event" class="page">
+      <h2>Create New Event</h2>
+      <form id="eventForm">
+        <label for="eventName">Event name:</label>
+        <input type="text" id="eventName" required />
+        <label for="eventStart">Start time:</label>
+        <input type="datetime-local" id="eventStart" required />
+        <label for="eventEnd">End time:</label>
+        <input type="datetime-local" id="eventEnd" required />
+        <button type="submit">Add Event</button>
+      </form>
+      <p id="eventForecast"></p>
+    </section>
+
+    <section id="about" class="page">
+      <h2>About This App</h2>
+      <p>Sunny Days is a new weather-aware event planner constructed using React, Supabase, and the Open-Meteo API. Book calendar events and see your event date's forecast in real time. The app dynamically loads your local weather forecast and overlays it on your personal schedule using FullCalendar. Data is written and read in real time via Supabase, providing a seamless and dynamic user experience without a typical server. The project was created to show how real-world APIs and cloud databases can be incorporated into responsive, interactive web apps.</p>
+    </section>
+  </main>
+
+</body>
+</html>
