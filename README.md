@@ -7,7 +7,7 @@ Developer manual:
 
 
 
-📄 Developer Manual,
+📄 Developer Manual, https://github.com/Afreirei/INST377-project/blob/88d5875100e7749f982bcbd4360297116201def3/SunnyDays_Developer_Manual.docx
 Installation Instructions,
 This is a front-end only project. No installation is required:
 
